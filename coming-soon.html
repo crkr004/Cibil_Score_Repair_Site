@@ -2,14 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We're Launching Soon!</title>
+    <style>
+        /* 1. Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6; /* Very light grey/off-white background */
+            color: #333; /* Dark text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 2. Main Container */
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        /* 3. Typography */
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50; /* Dark blue/charcoal for main heading */
+            margin-bottom: 0.2em;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #7f8c8d; /* Muted grey for body text */
+            line-height: 1.6;
+            margin-bottom: 2em;
+        }
+
+        /* 4. Home Button Styling */
+        .home-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 25px;
+            background-color: #3498db; /* A vibrant blue */
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-button:hover {
+            background-color: #2980b9; /* Slightly darker blue on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        .home-button:active {
+            transform: translateY(0);
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Feature Coming Soon!</h1>
-    <p>We are working hard to bring you the Sign Up and Sign In features. Check back soon!</p>
-    
-    <a href="index.html">
-        <button>Go to Home Page</button>
-    </a>
+
+    <div class="container">
+        <h1>🚀 Get Ready!</h1>
+        <p>
+            The **Sign Up** and **Sign In** features are currently under development. 
+            We're working hard to deliver the best experience for you, and we'll be launching this section very soon!
+        </p>
+
+        <a href="index.html" class="home-button">
+            Go Back to Home Page
+        </a>
+    </div>
+
 </body>
 </html>
