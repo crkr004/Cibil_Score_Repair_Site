@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - cibilscorerepair.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Modern & Responsive Styling (Internal CSS) */
+        :root {
+            --primary-color: #004d99; /* Deep Blue */
+            --accent-color: #ffaa00; /* Gold/Orange */
+            --light-bg: #f5f9ff;
+            --text-color: #333333;
+            --shadow-light: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: var(--shadow-light);
+            border-radius: 12px;
+        }
+
+        /* --- Navigation Button --- */
+        .home-button-section {
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.2s;
+            border: 2px solid var(--accent-color);
+        }
+
+        .home-button:hover {
+            background-color: #ffc107;
+            transform: translateY(-2px);
+        }
+        /* --- Header & Typography --- */
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-weight: 600;
+            font-size: 1.6em;
+        }
+        
+        .sub-header {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        /* --- Contact Grid --- */
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .contact-item {
+            flex: 1 1 300px;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item h3 {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        
+        .contact-item a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-item a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        
+        /* Specific Styles for Primary Contacts (Call/WhatsApp) */
+        .primary-contact {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            padding: 15px 25px;
+        }
+        
+        .primary-contact a {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-top: 5px;
+        }
+        
+        .primary-contact h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        /* --- Location Section --- */
+        .location-section {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .location-details {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--text-color);
+            white-space: pre-wrap;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 650px) {
+            .container {
+                margin: 20px 10px;
+                padding: 20px;
+                box-shadow: none;
+            }
+            .contact-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="home-button-section">
+            <a href="index.html" class="home-button">← Go to Home Page</a>
+        </div>
+
+        <h1>Contact Us</h1>
+        <p class="sub-header">Connect with Konduru. Anil Kumar Raju, Founder and CEO of cibilscorerepair.com.</p>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <p style="font-size: 1.2em; font-weight: 600; color: var(--primary-color);">
+                Konduru. Anil Kumar Raju
+            </p>
+            <p style="color: #666; margin-top: -10px;">
+                Founder and CEO
+            </p>
+        </div>
+
+        <h2>Get in Touch Immediately</h2>
+        <div class="contact-grid">
+            
+            <div class="contact-item primary-contact">
+                <h3>Call or WhatsApp</h3>
+                <a href="tel:+919666141413">
+                    +91 9666141413
+                </a>
+                <a href="https://wa.me/919666141413" target="_blank" style="font-size: 0.9em; margin-top: 10px; text-decoration: underline;">
+                    Start WhatsApp Chat
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email Us</h3>
+                <a href="mailto:fastcibilscorerepair@gmail.com">
+                    fastcibilscorerepair@gmail.com
+                </a>
+                <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
+                    We respond within 24 hours.
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Follow on Instagram</h3>
+                <a href="https://www.instagram.com/anilkumarraju.k" target="_blank">
+                    @anilkumarraju.k
+                </a>
+                <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
+                    Stay updated with our latest advice.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="location-section">
+            <h2>Our Main Location</h2>
+            <p class="location-details">
+                Beside KGS Function Hall,
+                Chittoor Road,
+                Rayachoti,
+                Annamayya District,
+                Andhra Pradesh, INDIA. 516269
+            </p>
+            
+        </div>
+        
+        <div class="home-button-section" style="margin-bottom: 0;">
+            <a href="index.html" class="home-button">← Go to Home Page</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
