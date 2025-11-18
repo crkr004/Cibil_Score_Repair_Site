@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - cibilscorerepair.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         /* Modern & Responsive Styling (Internal CSS) */
         :root {
@@ -124,26 +125,119 @@
             color: #007bff;
             text-decoration: underline;
         }
-        
-        /* Specific Styles for Primary Contacts (Call/WhatsApp) */
-        .primary-contact {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            border: none;
-            padding: 15px 25px;
+
+        /* Styling for combined digital links */
+        .contact-item .digital-link {
+            font-size: 1.1em;
+            margin: 15px 0;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
         }
         
-        .primary-contact a {
-            color: #ffffff;
+        .contact-item .digital-link:hover {
+            background-color: #eeeeee;
+        }
+        
+        .contact-item .digital-link i {
+            margin-right: 8px;
             font-size: 1.4em;
-            margin-top: 5px;
         }
         
-        .primary-contact h3 {
+        
+.primary-contact {
+    background-color: #ffffff; /* Changed to White background */
+    color: var(--text-color); /* Set base text color (though overridden below) */
+    border: 1px solid var(--accent-color); /* Added a light accent border for definition */
+    padding: 15px 25px;
+}
+
+.primary-contact a {
+    color: var(--primary-color); 
+    font-size: 1.4em;
+    margin-top: 5px;
+}
+
+.primary-contact h3 {
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.primary-contact p {
+   
+    color: #666; 
+}
+        /* End of Primary Contact Modification */
+
+        /* Styling for the social icon group */
+        .social-icons-group {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icons-group a {
+            flex: 1;
+            padding: 10px 5px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            color: var(--primary-color);
+            font-size: 1em; 
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons-group a:hover {
+            background-color: var(--accent-color);
             color: #ffffff;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+        .social-icons-group i {
+            font-style: normal;
+            font-size: 2em; /* Large icon size */
             margin-bottom: 5px;
         }
 
+        /* --- Office Hours Styling --- */
+        .office-hours-box {
+            max-width: 450px;
+            margin: 40px auto; 
+            padding: 20px; 
+            background-color: #fffbe6; /* Light yellow background */
+            border: 4px solid var(--accent-color); 
+            border-radius: 12px; 
+            box-shadow: var(--shadow-light);
+            text-align: center; 
+        }
+
+        .office-hours-box h3 {
+            color: var(--primary-color); 
+            font-size: 1.8em; 
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+
+        .office-hours-box p {
+            font-size: 1.1em; 
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .office-hours-box .holiday {
+            color: #dc3545; /* Red color for holiday */
+            font-weight: 700;
+            font-size: 1.2em;
+        }
         /* --- Location Section --- */
         .location-section {
             text-align: center;
@@ -159,6 +253,17 @@
             white-space: pre-wrap;
         }
 
+        /* --- Map Section Styling --- */
+        .map-container {
+            width: 100%;
+            height: 320px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            margin: 30px auto;
+        }
+
+
         /* --- Mobile Responsiveness --- */
         @media (max-width: 650px) {
             .container {
@@ -168,6 +273,9 @@
             }
             .contact-item {
                 flex: 1 1 100%;
+            }
+            .social-icons-group {
+                gap: 10px;
             }
         }
     </style>
@@ -196,36 +304,50 @@
         <div class="contact-grid">
             
             <div class="contact-item primary-contact">
-                <h3>Call or WhatsApp</h3>
+                <h3>Immediate Call</h3>
                 <a href="tel:+919666141413">
                     +91 9666141413
                 </a>
-                <a href="https://wa.me/919666141413" target="_blank" style="font-size: 0.9em; margin-top: 10px; text-decoration: underline;">
-                    Start WhatsApp Chat
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <h3>Email Us</h3>
-                <a href="mailto:fastcibilscorerepair@gmail.com">
-                    fastcibilscorerepair@gmail.com
-                </a>
-                <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
-                    We respond within 24 hours.
+                <p style="font-size: 0.9em; color: rgba(0, 77, 153, 0.8); margin-top: 10px;">
+                    Fastest way to reach us.
                 </p>
             </div>
 
             <div class="contact-item">
-                <h3>Follow on Instagram</h3>
-                <a href="https://www.instagram.com/anilkumarraju.k" target="_blank">
-                    @anilkumarraju.k
+                <h3>Digital Support (24 Hrs)</h3>
+                
+                <a href="https://wa.me/919666141413" target="_blank" class="digital-link">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp Chat
                 </a>
-                <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
-                    Stay updated with our latest advice.
+                
+                <a href="mailto:fastcibilscorerepair@gmail.com" class="digital-link">
+                    <i class="fas fa-envelope"></i> Email Us
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <h3>Stay Connected</h3>
+                <div class="social-icons-group">
+                    <a href="https://www.instagram.com/anilkumarraju.k" target="_blank" title="Instagram Profile">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.facebook.com/share/1BYxAQRSPa/" target="_blank" title="Facebook Page">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                </div>
+                <p style="font-size: 0.9em; color: #999; margin-top: 15px;">
+                    Latest updates on financial advice.
                 </p>
             </div>
 
         </div>
+
+        <div class="office-hours-box">
+            <h3>OFFICE HOURS ⏰</h3>
+            <p>MORNING 10:00 AM TO EVENING 05:00 PM</p>
+            <p class="holiday">SUNDAY HOLIDAY</p>
+        </div>
+        
 
         <div class="location-section">
             <h2>Our Main Location</h2>
@@ -238,20 +360,19 @@
             </p>
             
         </div>
-              <!-- Google Maps Placeholder -->
-              <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Find Us</h2>
+        <h2 style="text-align: center; border-bottom: none; margin-bottom: 20px;">Find Us on Map</h2>
 
-<div class="w-full h-80 rounded-xl overflow-hidden shadow-xl mx-auto">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5501700350055!2d78.750457!3d14.044657700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb3034079e9dfb7%3A0x8d663d4fff3063c2!2scibilscorerepair.com!5e0!3m2!1sen!2sin!4v1759566359608!5m2!1sen!2sin" 
-        width="100%" 
-        height="100%" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div> 
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.7578278453483!2d79.02293027429158!3d14.032230188981447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb398f6d6349c25%3A0x86733a4c1146603a!2sRayachoti%2C%20Andhra%20Pradesh%20516269%2C%20India!5e0!3m2!1sen!2sin!4v1700384400000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
         
         <div class="home-button-section" style="margin-bottom: 0;">
             <a href="index.html" class="home-button">← Go to Home Page</a>
