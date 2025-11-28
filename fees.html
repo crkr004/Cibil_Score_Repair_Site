@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Structure and Conditions - cibilscorerepair.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Base Styling */
+        :root {
+            --primary-blue: #0d47a1; /* Dark Blue */
+            --accent-yellow: #FFFA66; /* Light Header Yellow */
+            --highlight-red: #dc3545; /* Red for fee/warning */
+            --success-green: #4CAF50;
+            --background-light: #f8f9fa;
+            --shadow-subtle: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-light);
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+        
+        /* Container and Layout */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* --- Navigation Button (Matching contactus.html) --- */
+        .home-button-section {
+            text-align: center;
+            margin: 20px 0 40px 0; /* Added margin for separation */
+        }
+
+        .home-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--primary-blue);
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+        .home-button:hover {
+            background-color: #003975; /* Slightly darker blue */
+            transform: translateY(-1px);
+        }
+
+        /* --- Main Content Card --- */
+        .fee-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--primary-blue);
+        }
+        
+        h1 {
+            color: var(--primary-blue);
+            font-size: 2.8rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-top: 30px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-yellow);
+        }
+
+        /* Fee Range Display */
+        .fee-display {
+            background-color: #ffe082; /* Muted yellow/orange background */
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .fee-amount {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--highlight-red);
+            line-height: 1;
+        }
+        .fee-note {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* Policy Boxes */
+        .policy-box {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        /* Payment/Process Box */
+        .process-box {
+            background-color: #e3f2fd; /* Lightest Blue */
+            border-left: 5px solid var(--primary-blue);
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        /* Refund Box */
+        .refund-box {
+            background-color: #e8f5e9; /* Lightest Green */
+            border: 2px solid var(--success-green);
+            color: #1b5e20; /* Darker Green Text */
+            font-weight: 700;
+            text-align: center;
+        }
+        .refund-box .non-refundable-note {
+            color: var(--highlight-red);
+            font-weight: 800;
+            margin-top: 5px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .fee-amount { font-size: 2.5rem; }
+            .fee-card { padding: 20px; }
+            .container { margin: 20px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            
+            <div class="home-button-section">
+                <a href="index.html" class="home-button"><i class="fas fa-arrow-left mr-2"></i> Go to Home Page</a>
+            </div>
+
+            <h1>Fees Structure and Conditions</h1>
+
+            <div class="fee-card">
+                
+                <h2>Standard Fee Range</h2>
+                <div class="fee-display">
+                    <p class="fee-amount">
+                        ₹4,000 to ₹15,000 Only
+                    </p>
+                    <p class="fee-note">
+                        Price depends on complexity and number of issues.
+                    </p>
+                </div>
+
+                <div class="policy-box" style="background-color: #f0f4c3; border: 2px solid #cddc39;">
+                    <p class="font-bold text-gray-800 mb-2">
+                        Includes:
+                    </p>
+                    <ul style="list-style: disc; margin-left: 20px;">
+                        <li>Analysis and Resolution of all identified CIBIL problems.</li>
+                        <li>6 Months CIBIL Subscription (Included in the fixed amount).</li>
+                    </ul>
+                </div>
+                
+                <p class="text-lg font-bold text-red-700 mt-4 mb-4 text-center">
+                    Consultancy Fee Not Included
+                </p>
+
+                <hr class="my-6 border-gray-200">
+
+                <h2>External Credit Bureau Charges</h2>
+                <div class="policy-box" style="background-color: #fff3e0; border: 2px solid #ffcc80;">
+                    <p class="font-bold text-red-600 mb-2">
+                        If you have problems with other credit bureaus:
+                    </p>
+                    <p class="italic text-sm text-gray-700 mb-2">
+                        Example: Experian, CRIF, Equifax
+                    </p>
+                    <p class="text-md font-bold text-gray-800">
+                        You will be required to pay Extra as per their separate subscription plans.
+                    </p>
+                </div>
+
+                <hr class="my-6 border-gray-200">
+
+                <h2>Payment & Resolution Process</h2>
+                <div class="process-box policy-box">
+                    <p class="text-xl font-extrabold mb-3">
+                        We Fix One Final Amount As Per Your Problems
+                    </p>
+                    <p class="text-lg font-bold mb-1">
+                        1.Advance Payment: Pay Half Amount as Advance.
+                    </p>
+                    <p class="text-lg font-bold mb-3">
+                        2.Final Payment: Due upon successful completion of work.
+                    </p>
+                    <p class="text-xl font-bold">
+                        Resolution Time: **7 To 60 Days**
+                    </p>
+                </div>
+
+                <div class="refund-box policy-box mt-8">
+                    <p class="text-2xl font-black">
+                        100% Refund Guarantee
+                    </p>
+                    <p class="text-lg mb-2">
+                        If We Can't Solve Your Problems 100% You Will Get Your Refund
+                    </p>
+                    <p class="non-refundable-note">
+                        Consultancy Fee & Subscription Fee Non Refundable
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="home-button-section" style="margin-top: 40px; margin-bottom: 0;">
+                <a href="index.html" class="home-button">
+                    <i class="fas fa-arrow-left mr-2"></i> Return to Main Page
+                </a>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer style="background-color: var(--accent-yellow);" class="py-4 mt-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-700 text-sm">
+            © 2025 cibilscorerepair.com. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
